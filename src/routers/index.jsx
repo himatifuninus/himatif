@@ -1,4 +1,5 @@
 import NotFoundError from "@/pages/Error/NotFound";
+import EventPages from "@/pages/Event";
 import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/icc",
-    element: <>ICC Event</>,
+    element: <EventPages />,
   },
   {
     path: "*",
