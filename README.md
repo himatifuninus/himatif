@@ -27,6 +27,34 @@ Requirements :
 
 # Contribution Guide
 
+# Please DO NOT Direct PUSH to develop Branch
+
+## Braching Guide
+
+- if you do improve
+
+> `git checkout -b "improvement/apa-yang-di-improve`
+
+- if you do bugfix
+
+  > `git checkout -b "bugfix/apa-yang-di-fix`
+
+- if you do create a new feature
+  > `git checkout -b "feature/fitur-apa-yang-di-buat`
+
+## Commit Message Guide
+
+- if you do improve
+
+  > `git commit -m "improvement: apa yang di improve`
+
+- if you do bugfix
+
+  > `git commit -m "bugfix: apa yang di fix`
+
+- if you do create a new feature
+  > `git commit -m "feature: fitur apa yang di buat`
+
 ## If your local change not commited
 
 - 1.Stash dulu kerjaan kamu supaya gak ilang
