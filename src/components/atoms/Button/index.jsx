@@ -5,11 +5,15 @@ const Button = (props) => {
   return (
     <Fragment>
       {props.to ? (
-        <Link to={`${to}`}>
-          <button className="">{props.text}</button>
+        <Link to={`${props.to}`}>
+          <button {...props} className="">
+            {props.text}
+          </button>
         </Link>
       ) : (
-        <button className="">{props.text}</button>
+        <button {...props} className="">
+          {props.text}
+        </button>
       )}
     </Fragment>
   );
