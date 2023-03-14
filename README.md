@@ -198,4 +198,4 @@ Untuk bisa menggunakan husky agar berjalan baik dan benar maka perlu di inisiali
 
 ## Demo App
 
-- [Development Build](https://himatif.dev/)
+- [Development Build](https://himatif-revamp.netlify.app/)
