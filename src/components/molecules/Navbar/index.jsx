@@ -6,18 +6,21 @@ const Navbar = () => {
     <header className="sticky top-0 w-full flex justify-between border-1 shadow-md items-center p-4">
       <Link to="/">
         <figure className="flex gap-x-4 items-center">
-          <figcaption className="text-uppercase font-medium text-blue-600  order-2">
+          <figcaption className="text-uppercase font-medium text-2xl text-blue-600  order-2">
             HIMATIF
           </figcaption>
           <img loading="lazy" src="/logo.svg" alt="himatif" />
         </figure>
       </Link>
       <nav className="md:flex hidden items-center gap-x-4">
-        <NavLink to={"/agenda"} className={"text-gray-600 appearence-none"}>
-          Agenda
+        <NavLink to={"/icc"} className={"text-gray-600 appearence-none"}>
+          ICC
         </NavLink>
         <NavLink to={"/about"} className={"text-gray-600 appearence-none"}>
           About
+        </NavLink>
+        <NavLink to={"/makrab"} className={"text-gray-600 appearence-none"}>
+          Makrab
         </NavLink>
       </nav>
       <nav className="md:hidden flex items-center gap-x-4">
