@@ -1,8 +1,6 @@
 # Himatif Uninus Official Website
 
-Boilerplate React dengan WindiCSS sebagai Styling Unit
-
-Requirements :
+Dibuat dengan :
 
 - React
 - Vite
