@@ -6,12 +6,12 @@ const Button = (props) => {
     <Fragment>
       {props.to ? (
         <Link to={`${props.to}`}>
-          <button {...props} className="">
+          <button {...props} className="bg-[#020181] p-3 h-auto px-10 rounded-lg text-white">
             {props.text}
           </button>
         </Link>
       ) : (
-        <button {...props} className="">
+        <button {...props} className="bg-[#020181] p-3 h-auto px-10 rounded-lg text-white">
           {props.text}
         </button>
       )}
