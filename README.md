@@ -11,7 +11,7 @@ Requirements :
 - Tanstack Query
 - React Hook Form
 - Jest
-- TailwindCSS
+- WindiCSS
 - HeadlessUI
 - ESLint
 - Prettier
@@ -55,7 +55,7 @@ Requirements :
 - if you do create a new feature
   > `git commit -m "feature: fitur apa yang di buat`
 
-## If your local change not commited
+## Conflict Resolve Guide
 
 - 1.Stash dulu kerjaan kamu supaya gak ilang
 
@@ -73,7 +73,7 @@ Requirements :
 
 - 3 Tapi jika ketika melakukan step kedua terjadi error conflitc atau karena ketololan kamu, maka ikuti langkah yang bawah
 
-## If Your Local Change is Commited
+## Conflict Resolve Guide V2
 
 - 1 Pindah dulu ke Branch main
 
@@ -139,7 +139,7 @@ Visual Studio Code
 
 - Project yang sudah di build bisa dijalankan dengan metode berikut
 
-> `yarn build`
+> `yarn preview`
 
 ## Development With Nix
 
