@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "virtual:windi.css";
+import "windi.css";
 import { RouterProvider } from "react-router-dom";
 import { router } from "@/routers";
 import Loading from "./components/molecules/Loading";

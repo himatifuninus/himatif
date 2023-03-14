@@ -1,7 +1,9 @@
+import NotFoundError from "@/pages/Error/NotFound";
 import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 const HomePages = lazy(() => import("@/pages/Home"));
+const AboutPages = lazy(() => import("@/pages/About"));
 
 export const router = createBrowserRouter([
   {
@@ -14,10 +16,14 @@ export const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <>Agenda</>,
+    element: <AboutPages />,
   },
   {
     path: "/icc",
     element: <>ICC Event</>,
+  },
+  {
+    path: "*",
+    element: <NotFoundError />,
   },
 ]);

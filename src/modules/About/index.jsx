@@ -1,5 +1,7 @@
+import BaseLayout from "@/layouts/Base";
+
 const AboutModules = () => {
-  return <>About Modules</>;
+  return <BaseLayout>About Modules</BaseLayout>;
 };
 
 export default AboutModules;
