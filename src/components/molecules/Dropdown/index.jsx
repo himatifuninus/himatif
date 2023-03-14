@@ -25,9 +25,7 @@ const Dropdown = ({ children, list }) => {
                     } group flex w-full items-center rounded-md text-sm gap-x-2 px-1 text-gray-400 dark:text-white`}
                   >
                     {x.icon}
-                    <span className="text-base px-1 text-gray-400 dark:text-white">
-                      {x.text}
-                    </span>
+                    <span className="text-base px-1 text-gray-400 dark:text-white">{x.text}</span>
                   </button>
                 )}
               </Menu.Item>

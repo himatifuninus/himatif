@@ -1,11 +1,5 @@
 const DropdownIcon = () => (
-  <svg
-    width="20"
-    height="13"
-    viewBox="0 0 24 15"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg width="20" height="13" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M9.70208 12.3608C9.31433 11.9676 9.31882 11.3344 9.7121 10.9467L20.103 0.702066C20.4963 0.314319 21.1294 0.318809 21.5172 0.712092L23.6234 2.8484L11.8083 14.4971L9.70208 12.3608Z"
       fill="black"
