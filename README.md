@@ -33,7 +33,7 @@ Requirements :
 
 - if you do improve
 
-> `git checkout -b "improvement/apa-yang-di-improve`
+  > `git checkout -b "improvement/apa-yang-di-improve`
 
 - if you do bugfix
 
