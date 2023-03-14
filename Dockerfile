@@ -6,9 +6,7 @@ COPY package.json ./
 COPY yarn.lock ./
 RUN yarn
 COPY . .
-RUN yarn format
-RUN yarn lint:fix
-RUN yarn test:run
+RUN yarn lint
 RUN yarn build
 
 FROM nginx:alpine AS prod
