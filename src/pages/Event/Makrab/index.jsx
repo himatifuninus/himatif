@@ -1,14 +1,14 @@
 import { lazy } from "react";
 import SuspenseError from "@/modules/Common/SuspenseError";
 
-const AboutModules = lazy(() => import("@/modules/About"));
+const MakrabModules = lazy(() => import("@/modules/Event/Makrab"));
 
-const AboutPages = () => {
+const ICCPages = () => {
   return (
     <SuspenseError>
-      <AboutModules />
+      <MakrabModules />;
     </SuspenseError>
   );
 };
 
-export default AboutPages;
+export default ICCPages;

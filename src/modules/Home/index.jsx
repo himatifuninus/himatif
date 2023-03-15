@@ -1,9 +1,7 @@
-import Loading from "@/components/molecules/Loading";
-import Error from "@/components/molecules/Error";
 import BaseLayout from "@/layouts/Base";
-import { lazy, Suspense } from "react";
-import { ErrorBoundary } from "react-error-boundary";
+import { lazy } from "react";
 import ContentLayout from "@/layouts/Content";
+import SuspenseError from "../Common/SuspenseError";
 
 const HeadSection = lazy(() => import("@/modules/Home/HeadSection"));
 const NewsSection = lazy(() => import("@/modules/Home/NewsSection"));
@@ -13,24 +11,16 @@ const HomeModules = () => {
   return (
     <BaseLayout>
       <ContentLayout>
-        <ErrorBoundary fallback={<Error>Error when load Head Section</Error>}>
-          <Suspense fallback={<Loading />}>
-            <HeadSection />
-          </Suspense>
-        </ErrorBoundary>
-
-        <ErrorBoundary fallback={<Error>Error when load News Section</Error>}>
-          <Suspense fallback={<Loading />}>
-            <NewsSection />
-          </Suspense>
-        </ErrorBoundary>
+        <SuspenseError>
+          <HeadSection />
+        </SuspenseError>
+        <SuspenseError>
+          <NewsSection />
+        </SuspenseError>
       </ContentLayout>
-
-      <ErrorBoundary fallback={<Error>Error when load Event Section</Error>}>
-        <Suspense fallback={<Loading />}>
-          <EventSection />
-        </Suspense>
-      </ErrorBoundary>
+      <SuspenseError>
+        <EventSection />
+      </SuspenseError>
     </BaseLayout>
   );
 };

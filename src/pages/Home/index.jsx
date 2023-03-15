@@ -1,16 +1,13 @@
-import { ErrorBoundary } from "react-error-boundary";
-import { lazy, Suspense } from "react";
-import Loading from "@/components/molecules/Loading";
+import SuspenseError from "@/modules/Common/SuspenseError";
+import { lazy } from "react";
 
 const HomeModules = lazy(() => import("@/modules/Home"));
 
 const HomePages = () => {
   return (
-    <ErrorBoundary fallback={<>Error was happen</>}>
-      <Suspense fallback={<Loading />}>
-        <HomeModules />
-      </Suspense>
-    </ErrorBoundary>
+    <SuspenseError>
+      <HomeModules />
+    </SuspenseError>
   );
 };
 

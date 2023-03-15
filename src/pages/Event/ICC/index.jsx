@@ -1,14 +1,14 @@
 import { lazy } from "react";
 import SuspenseError from "@/modules/Common/SuspenseError";
 
-const AboutModules = lazy(() => import("@/modules/About"));
+const ICCModules = lazy(() => import("@/modules/Event/ICC"));
 
-const AboutPages = () => {
+const ICCPages = () => {
   return (
     <SuspenseError>
-      <AboutModules />
+      <ICCModules />;
     </SuspenseError>
   );
 };
 
-export default AboutPages;
+export default ICCPages;
