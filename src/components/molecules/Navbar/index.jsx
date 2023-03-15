@@ -13,13 +13,13 @@ const Navbar = () => {
         </figure>
       </Link>
       <nav className="md:flex hidden items-center gap-x-4">
-        <NavLink to={"/icc"} className={"text-gray-600 appearence-none"}>
+        <NavLink to={"/events/icc"} className={"text-gray-600 appearence-none"}>
           ICC
         </NavLink>
         <NavLink to={"/about"} className={"text-gray-600 appearence-none"}>
           About
         </NavLink>
-        <NavLink to={"/makrab"} className={"text-gray-600 appearence-none"}>
+        <NavLink to={"/events/makrab"} className={"text-gray-600 appearence-none"}>
           Makrab
         </NavLink>
       </nav>

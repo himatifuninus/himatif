@@ -1,10 +1,12 @@
 import NotFoundError from "@/pages/Error/NotFound";
-import EventPages from "@/pages/Event";
 import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 const HomePages = lazy(() => import("@/pages/Home"));
 const AboutPages = lazy(() => import("@/pages/About"));
+const EventPages = lazy(() => import("@/pages/Event"));
+const ICCPages = lazy(() => import("@/pages/Event/ICC"));
+const MakrabPages = lazy(() => import("@/pages/Event/Makrab"));
 
 export const router = createBrowserRouter([
   {
@@ -12,16 +14,22 @@ export const router = createBrowserRouter([
     element: <HomePages />,
   },
   {
-    path: "/makrab",
-    element: <>Makrab</>,
-  },
-  {
     path: "/about",
     element: <AboutPages />,
   },
   {
-    path: "/icc",
+    path: "/events",
     element: <EventPages />,
+    children: [
+      {
+        path: "icc",
+        element: <ICCPages />,
+      },
+      {
+        path: "makrab",
+        element: <MakrabPages />,
+      },
+    ],
   },
   {
     path: "*",
