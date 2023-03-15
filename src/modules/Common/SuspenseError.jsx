@@ -1,7 +1,7 @@
-const { default: Error } = require("@/components/molecules/Error");
-const { default: Loading } = require("@/components/molecules/Loading");
-const { Suspense } = require("react");
-const { ErrorBoundary } = require("react-error-boundary");
+import Error from "@/components/molecules/Error";
+import Loading from "@/components/molecules/Loading";
+import { Suspense } from "react";
+import { ErrorBoundary } from "react-error-boundary";
 
 const SuspenseError = ({
   children,

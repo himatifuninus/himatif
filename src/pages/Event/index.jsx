@@ -1,13 +1,15 @@
 import SuspenseError from "@/modules/Common/SuspenseError";
-import { lazy, Suspense } from "react";
-import { ErrorBoundary } from "react-error-boundary";
+import { lazy } from "react";
+import { Outlet } from "react-router-dom";
 
 const EventModules = lazy(() => import("@/modules/Event"));
 
 const EventPages = () => {
   return (
     <SuspenseError>
-      <EventModules />
+      <EventModules>
+        <Outlet />
+      </EventModules>
     </SuspenseError>
   );
 };

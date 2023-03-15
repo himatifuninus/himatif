@@ -1,5 +1,5 @@
 const ICCModules = () => {
-  return <></>;
+  return <span>ICC Modules</span>;
 };
 
 export default ICCModules;

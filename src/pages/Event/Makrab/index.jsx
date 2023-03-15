@@ -6,7 +6,7 @@ const MakrabModules = lazy(() => import("@/modules/Event/Makrab"));
 const ICCPages = () => {
   return (
     <SuspenseError>
-      <MakrabModules />;
+      <MakrabModules />
     </SuspenseError>
   );
 };

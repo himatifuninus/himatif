@@ -6,7 +6,7 @@ const ICCModules = lazy(() => import("@/modules/Event/ICC"));
 const ICCPages = () => {
   return (
     <SuspenseError>
-      <ICCModules />;
+      <ICCModules />
     </SuspenseError>
   );
 };

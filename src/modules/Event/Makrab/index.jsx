@@ -1,5 +1,5 @@
 const MakrabModules = () => {
-  return <></>;
+  return <span>Makrab Modules</span>;
 };
 
 export default MakrabModules;
