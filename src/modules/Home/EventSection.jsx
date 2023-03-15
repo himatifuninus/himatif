@@ -1,9 +1,9 @@
 import Button from "@/components/atoms/Button";
 import MainLayout from "@/layouts/Main";
 import { ICC_EVENTS } from "@/utilities/constant";
-import EventItem from "./EventItem";
+import EventItem from "@/modules/Event/EventItem";
 
-function EventModules() {
+function EventSection() {
   return (
     <MainLayout>
       <Button text="Event" />
@@ -20,4 +20,4 @@ function EventModules() {
   );
 }
 
-export default EventModules;
+export default EventSection;
