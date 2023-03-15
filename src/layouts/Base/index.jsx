@@ -5,7 +5,7 @@ const BaseLayout = ({ children, isCenter }) => {
   return (
     <Fragment>
       <Navbar />
-      <section className={"flex flex-col items-start p-8 h-screen justify-start"}>
+      <section className={"flex flex-col items-start p-8 h-auto gap-y-4 justify-start"}>
         {children}
       </section>
     </Fragment>
