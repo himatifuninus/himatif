@@ -20,7 +20,7 @@ const OrganizationItem = ({ imgUrl, type = "organization" }) => {
 const Footer = () => {
   return (
     <footer className="w-full p-16 bg-[#020181] text-white text-center ">
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col items-center gap-8">
         <h2 className="text-xl sm:text-3xl sm:w-[500px] font-medium tracking-wider leading-normal">
           Himpunan Mahasiswa Teknik Informatika
         </h2>
